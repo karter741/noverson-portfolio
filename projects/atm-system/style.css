@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #0f2b3d 0%, #1a4a6e 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.atm-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.atm-machine {
+  background: #2c3e50;
+  border-radius: 48px;
+  padding: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.atm-header {
+  background: #1a252f;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.atm-header i {
+  font-size: 1.4rem;
+  color: #ffd966;
+}
+
+.atm-screen {
+  background: #e8f0f5;
+  border-radius: 24px;
+  padding: 1.8rem;
+  min-height: 350px;
+  margin-bottom: 1.5rem;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.screen-content {
+  text-align: center;
+}
+
+.welcome-screen h2 {
+  margin: 1rem 0 0.5rem;
+  color: #0f2b3d;
+}
+
+.welcome-screen p {
+  color: #2c475c;
+  margin-bottom: 1rem;
+}
+
+.pin-input-area {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.pin-field {
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100px;
+  border: 2px solid #cbd5e1;
+  border-radius: 16px;
+  font-family: monospace;
+  letter-spacing: 4px;
+}
+
+.atm-btn-primary {
+  background: #2c7da0;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.atm-btn-primary:hover {
+  background: #1e5a74;
+  transform: scale(1.02);
+}
+
+.demo-hint {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-top: 1rem;
+}
+
+/* Dashboard Styles */
+.balance-display {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 24px;
+  margin: 1rem 0;
+}
+
+.balance-amount {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2c7da0;
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.dash-btn {
+  background: white;
+  border: 2px solid #2c7da0;
+  padding: 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dash-btn:hover {
+  background: #2c7da0;
+  color: white;
+}
+
+.transaction-history {
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: left;
+  background: white;
+  border-radius: 16px;
+  padding: 0.8rem;
+}
+
+.history-item {
+  padding: 0.5rem;
+  border-bottom: 1px solid #e2edf2;
+  font-size: 0.85rem;
+}
+
+.amount-input {
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 16px;
+  width: 150px;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+/* Keypad Styles */
+.atm-keypad {
+  background: #1e2a36;
+  border-radius: 28px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.keypad-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.key-btn {
+  width: 70px;
+  height: 60px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 20px;
+  background: #2c3e50;
+  color: white;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.key-btn:active {
+  transform: scale(0.95);
+  background: #2c7da0;
+}
+
+.clear-btn, .enter-btn {
+  background: #ff8c42;
+}
+
+.atm-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.action-btn {
+  background: #ffd966;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.action-btn:hover {
+  background: #ffc107;
+}
+
+.atm-footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: #8aa0b0;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 560px) {
+  .atm-machine {
+    padding: 1rem;
+  }
+  .key-btn {
+    width: 55px;
+    height: 50px;
+  }
+}   
